@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 public class Main {
     //    Напишите пример перехвата и обработки исключения в блоке try-catch-метода.
     public static void main(String[] args) throws IOException {
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите число:");
         String input = reader.readLine();
@@ -17,6 +18,8 @@ public class Main {
         } catch (Exception e) {
             System.out.printf("Ошибка: %s%n", e.getMessage());
         }
+        System.out.println();
     }
+
 }
 
